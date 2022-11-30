@@ -1,7 +1,9 @@
 <script setup lang="ts">
   import SvgIcon from '../SvgIcon/index.vue';
   // import { ref } from 'vue'
-  import { useDark, useToggle } from '@vueuse/core';
+  import { useDark, useToggle } from '@vueuse/core'; // element-plus官网有提到该使用方法
+  //https://element-plus.gitee.io/zh-CN/guide/theming.html#%E9%80%9A%E8%BF%87-css-%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE
+  // https://vueuse.org/core/useDark/
   import { useAppStore } from '/@/store';
   import { Sunny, Moon } from '@element-plus/icons-vue';
 

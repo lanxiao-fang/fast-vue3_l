@@ -17,7 +17,7 @@ export const useAppStore = defineStore(
         this.$patch(partial);
       },
 
-      // Change theme color
+      // 修改主题，明亮/暗黑
       toggleTheme(dark: boolean) {
         if (dark) {
           this.theme = 'dark';

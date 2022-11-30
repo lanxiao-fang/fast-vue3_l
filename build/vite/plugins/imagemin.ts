@@ -1,3 +1,9 @@
+/* 
+  压缩图片资源的vite 插件
+
+
+
+*/
 import viteImagemin from 'vite-plugin-imagemin';
 
 export function ConfigImageminPlugin() {

@@ -3,7 +3,7 @@ import { showMessage } from './status';
 import { IResponse } from './type';
 import { getToken } from '/@/utils/auth';
 
-// 如果请求话费了超过 `timeout` 的时间，请求将被中断
+// 如果请求花费了超过 `timeout` 的时间，请求将被中断
 axios.defaults.timeout = 5000;
 // 表示跨域请求时是否需要使用凭证
 axios.defaults.withCredentials = false;
@@ -64,9 +64,12 @@ axiosInstance.interceptors.request.use(
   },
 );
 
+// T使用泛型，在函数执行时可对反省进行类型确认推断，默认是any
 const request = <T = any>(config: AxiosRequestConfig): Promise<T> => {
   const conf = config;
   return new Promise((resolve) => {
+    // AxiosResponse是axios提供的一个接口，看相关源码知道AxiosResponse接口里的data属性也是某个接口类型T
+    // 所以采用AxiosResponse<IResponse>写法 ， IResponse代替interface AxiosResponse<T = any, D = any> {} 中的T
     axiosInstance.request<any, AxiosResponse<IResponse>>(conf).then((res: AxiosResponse<IResponse>) => {
       // resolve(res as unknown as Promise<T>);
       const {

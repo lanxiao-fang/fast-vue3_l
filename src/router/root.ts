@@ -7,4 +7,12 @@ export default [
     path: 'shi',
     component: () => import('@/pages/shi/index.vue'),
   },
+  {
+    path: 'demo',
+    component: () => import('@/pages/demo/index.vue'),
+  },
+  {
+    path: 'table',
+    component: () => import('@/pages/table/index.vue'),
+  },
 ];
