@@ -11,6 +11,10 @@ declare module '@vue/runtime-core' {
     ElForm: typeof import('element-plus/es')['ElForm'];
     ElFormItem: typeof import('element-plus/es')['ElFormItem'];
     ElInput: typeof import('element-plus/es')['ElInput'];
+    ElInputNumber: typeof import('element-plus/es')['ElInputNumber'];
+    ElSwitch: typeof import('element-plus/es')['ElSwitch'];
+    ElTable: typeof import('element-plus/es')['ElTable'];
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn'];
     ElTooltip: typeof import('element-plus/es')['ElTooltip'];
     Footer: typeof import('./../src/components/Footer/index.vue')['default'];
     Header: typeof import('./../src/components/Header/index.vue')['default'];
