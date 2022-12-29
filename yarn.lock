@@ -2108,7 +2108,7 @@
   "resolved" "https://registry.npmmirror.com/chardet/-/chardet-0.7.0.tgz"
   "version" "0.7.0"
 
-"chokidar@^3.5.2", "chokidar@^3.5.3":
+"chokidar@^3.5.2", "chokidar@^3.5.3", "chokidar@>=3.0.0 <4.0.0":
   "integrity" "sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw=="
   "resolved" "https://registry.npmmirror.com/chokidar/-/chokidar-3.5.3.tgz"
   "version" "3.5.3"
@@ -4467,6 +4467,11 @@
     "p-pipe" "^3.0.0"
     "replace-ext" "^1.0.0"
 
+"immutable@^4.0.0":
+  "integrity" "sha512-oNkuqVTA8jqG1Q6c+UglTOD1xhC1BtjKI7XkCXRkZHrN5m18/XsnUp8Q89GkQO/z+0WjonSvl0FLhDYftp46nQ=="
+  "resolved" "https://registry.npmmirror.com/immutable/-/immutable-4.1.0.tgz"
+  "version" "4.1.0"
+
 "import-fresh@^3.0.0", "import-fresh@^3.2.1":
   "integrity" "sha1-NxYsJfy566oublPVtNiM4X2eDCs="
   "resolved" "https://registry.npmmirror.com/import-fresh/download/import-fresh-3.3.0.tgz"
@@ -6063,6 +6068,11 @@
     "ufo" "^0.8.6"
     "undici" "^5.11.0"
 
+"ometa@0.2.2":
+  "integrity" "sha512-LZuoK/yjU3FvrxPjUXUlZ1bavCfBPqauA7fsNdwi+AVhRdyk2IzgP3JRnevvjzQ6fKHdUw8YISshf53FmpHrng=="
+  "resolved" "https://registry.npmmirror.com/ometa/-/ometa-0.2.2.tgz"
+  "version" "0.2.2"
+
 "on-finished@~2.3.0":
   "integrity" "sha1-IPEzZIGwg811M3mSoWlxqi2QaUc= sha512-ikqdkGAAyf/X/gPhXGvfgAytDZtDbr+bkNUJ0N9h5MI/dmdgCs3l6hoHrcUv41sRKew3jIwrp4qQDXiK99Utww=="
   "resolved" "https://registry.npmmirror.com/on-finished/-/on-finished-2.3.0.tgz"
@@ -7111,6 +7121,15 @@
   "resolved" "https://registry.npmmirror.com/safer-buffer/-/safer-buffer-2.1.2.tgz"
   "version" "2.1.2"
 
+"sass@*", "sass@^1.56.2":
+  "integrity" "sha512-ciEJhnyCRwzlBCB+h5cCPM6ie/6f8HrhZMQOf5vlU60Y1bI1rx5Zb0vlDZvaycHsg/MqFfF1Eq2eokAa32iw8w=="
+  "resolved" "https://registry.npmmirror.com/sass/-/sass-1.56.2.tgz"
+  "version" "1.56.2"
+  dependencies:
+    "chokidar" ">=3.0.0 <4.0.0"
+    "immutable" "^4.0.0"
+    "source-map-js" ">=0.6.2 <2.0.0"
+
 "sax@^1.2.4":
   "integrity" "sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw=="
   "resolved" "https://registry.npmmirror.com/sax/-/sax-1.2.4.tgz"
@@ -7124,6 +7143,13 @@
     "@types/json-schema" "^7.0.8"
     "ajv" "^6.12.5"
     "ajv-keywords" "^3.5.2"
+
+"scss@^0.2.4":
+  "integrity" "sha512-4u8V87F+Q/upVhUmhPnB4C1R11xojkRkWjExL2v0CX2EXTg18VrKd+9JWoeyCp2VEMdSpJsyAvVU+rVjogh51A=="
+  "resolved" "https://registry.npmmirror.com/scss/-/scss-0.2.4.tgz"
+  "version" "0.2.4"
+  dependencies:
+    "ometa" "0.2.2"
 
 "scule@^1.0.0":
   "integrity" "sha512-4AsO/FrViE/iDNEPaAQlb77tf0csuq27EsVpy6ett584EcRTp6pTDLoGWVxCD77y5iU5FauOvhsI4o1APwPoSQ=="
@@ -7354,7 +7380,7 @@
   dependencies:
     "is-plain-obj" "^1.0.0"
 
-"source-map-js@^1.0.1", "source-map-js@^1.0.2":
+"source-map-js@^1.0.1", "source-map-js@^1.0.2", "source-map-js@>=0.6.2 <2.0.0":
   "integrity" "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw=="
   "resolved" "https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz"
   "version" "1.0.2"

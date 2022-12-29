@@ -6273,6 +6273,7 @@ var require_color_convert = __commonJS({
       convert[fromModel] = {};
       Object.defineProperty(convert[fromModel], "channels", { value: conversions[fromModel].channels });
       Object.defineProperty(convert[fromModel], "labels", { value: conversions[fromModel].labels });
+      console.log('vvvvv', routes);
       const routes = route(fromModel);
       const routeModels = Object.keys(routes);
       routeModels.forEach((toModel) => {

@@ -8,10 +8,14 @@ export {};
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ElButton: typeof import('element-plus/es')['ElButton'];
+    ElButtonGroup: typeof import('element-plus/es')['ElButtonGroup'];
+    ElCard: typeof import('element-plus/es')['ElCard'];
     ElForm: typeof import('element-plus/es')['ElForm'];
     ElFormItem: typeof import('element-plus/es')['ElFormItem'];
+    ElImage: typeof import('element-plus/es')['ElImage'];
     ElInput: typeof import('element-plus/es')['ElInput'];
     ElInputNumber: typeof import('element-plus/es')['ElInputNumber'];
+    ElPagination: typeof import('element-plus/es')['ElPagination'];
     ElSwitch: typeof import('element-plus/es')['ElSwitch'];
     ElTable: typeof import('element-plus/es')['ElTable'];
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn'];
@@ -21,5 +25,7 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink'];
     RouterView: typeof import('vue-router')['RouterView'];
     SvgIcon: typeof import('./../src/components/SvgIcon/index.vue')['default'];
+    Table: typeof import('./../src/components/Table/index.vue')['default'];
+    TableColumn: typeof import('./../src/components/Table/TableColumn.vue')['default'];
   }
 }
