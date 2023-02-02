@@ -60,7 +60,7 @@
     await formEl.validate((valid) => {
       if (valid) {
         ElMessage.success('欢迎使用');
-        router.push('/');
+        router.push('/myTable');
         userStore.info();
       } else {
         ElMessage.error('错误信息');

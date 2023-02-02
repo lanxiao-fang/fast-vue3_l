@@ -5,6 +5,7 @@
       <router-link to="/myTable/renderTable"><div class="tab mr-5">render表格</div></router-link>
       <router-link to="/myTable/paginationTable"><div class="tab mr-5">分页表格</div></router-link>
       <router-link to="/myTable/manyHeaderTable"><div class="tab mr-5">多级表头</div></router-link>
+      <router-link to="/myTable/manyHeaderTable"><div class="tab mr-5">无限菜单</div></router-link>
     </div>
 
     <router-view />
